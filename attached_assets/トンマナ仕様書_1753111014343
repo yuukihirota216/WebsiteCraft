@@ -1,0 +1,163 @@
+<LPDesignSpec>
+
+  <!-- 1. 目的・コンセプト -->
+  <PurposeConcept>
+    <LPPurpose>仲介手数料0円を訴求し、LINE追加→問い合わせへ導く</LPPurpose>
+    <Target>費用を抑えて住まいを探したい20〜40代男女</Target>
+    <Tone>
+      <Keyword>安心感</Keyword>
+      <Keyword>親しみやすさ</Keyword>
+      <Keyword>スピード感</Keyword>
+    </Tone>
+    <KeyMessage>仲介手数料が<strong>0円</strong>になるのは<strong>今だけ</strong>！</KeyMessage>
+  </PurposeConcept>
+
+  <!-- 2. カラーパレット -->
+  <ColorPalette>
+    <Color role="KeyVisualBackground" hex="#FBBA48" rgb="251,186,72">
+      <Usage>ヒーロー部のベースカラー。温かみ＋目を引く</Usage>
+    </Color>
+    <Color role="CTA_LINE" hex="#2DA822" rgb="45,168,34">
+      <Usage>LINE関連要素（ボタン・バナー・矢印）限定</Usage>
+    </Color>
+    <Color role="HighlightText" hex="#E60012" rgb="230,0,18">
+      <Usage>「0円」「限定」など価格メリットを強調</Usage>
+    </Color>
+    <Color role="TrustInfoBackground" hex="#2A4666" rgb="42,70,102">
+      <Usage>会社説明・媒体ロゴ背景</Usage>
+    </Color>
+    <Color role="BasePaper" hex="#FEF6E4" rgb="254,246,228">
+      <Usage>本文領域の共通背景</Usage>
+    </Color>
+    <Color role="SideMargin" hex="#D9D9D9" rgb="217,217,217">
+      <Usage>LP左右に8pxグレー帯を敷き枠線代わり</Usage>
+    </Color>
+  </ColorPalette>
+
+  <!-- 3. タイポグラフィ -->
+  <Typography>
+    <Style name="H1">
+      <FontFamily>Noto Sans JP, Hiragino Kaku Gothic</FontFamily>
+      <FontSize unit="px">28</FontSize>
+      <FontWeight>900</FontWeight>
+      <LetterSpacing>-1%</LetterSpacing>
+      <LineHeight>120%</LineHeight>
+    </Style>
+    <Style name="H2">
+      <FontFamily>Noto Sans JP, Hiragino Kaku Gothic</FontFamily>
+      <FontSize unit="px">22</FontSize>
+      <FontWeight>700</FontWeight>
+      <Extra>強調色に赤を併用</Extra>
+    </Style>
+    <Style name="Body">
+      <FontFamily>Noto Sans JP, Hiragino Kaku Gothic</FontFamily>
+      <FontSize unit="px">16</FontSize>
+      <FontWeight>400</FontWeight>
+      <LineHeight>160%</LineHeight>
+    </Style>
+    <Style name="Caption">
+      <FontFamily>Noto Sans JP, Hiragino Kaku Gothic</FontFamily>
+      <FontSize unit="px">13</FontSize>
+      <FontWeight>400</FontWeight>
+      <Color>#666666</Color>
+    </Style>
+    <Style name="NumericLarge">
+      <FontFamily>Noto Sans JP, Hiragino Kaku Gothic</FontFamily>
+      <FontSize unit="px">48</FontSize>
+      <FontWeight>900</FontWeight>
+      <Color>#E60012</Color>
+    </Style>
+  </Typography>
+
+  <!-- 4. レイアウト & グリッド -->
+  <Layout>
+    <Width>
+      <Mobile>320–375px</Mobile>
+      <Desktop>600px (中央寄せ)</Desktop>
+    </Width>
+    <Grid>1カラム / 12px 基本グリッド</Grid>
+    <Spacing>
+      <Section>24px</Section>
+      <Block>16px</Block>
+    </Spacing>
+    <Sections order="1">
+      <Section id="Hero">ヒーロー</Section>
+      <Section id="MeritBadges">メリット3点バッジ</Section>
+      <Section id="LINE_CTA">LINE CTA</Section>
+      <Section id="MediaInfo">媒体・免責エリア</Section>
+      <Section id="FAQ">FAQ／お悩みリスト</Section>
+    </Sections>
+    <BackgroundFlow>黄 → 緑 → 濃紺 → ベージュ</BackgroundFlow>
+  </Layout>
+
+  <!-- 5. 画像・イラスト・アイコン -->
+  <Visuals>
+    <Character>明るい女性イラスト（線 #2A4666 / フラット塗り）</Character>
+    <Icon>フラット・2D・単色（黄 or 緑）で統一</Icon>
+    <PhotoUsage>使用しない（テキスト＆イラスト中心）</PhotoUsage>
+    <Badge>
+      <Diameter unit="px">78</Diameter>
+      <Border width="2px" color="#2A4666"/>
+      <Shadow>なし</Shadow>
+    </Badge>
+  </Visuals>
+
+  <!-- 6. UIコンポーネント -->
+  <UIComponents>
+    <CTAButton>
+      <BackgroundColor>#2DA822</BackgroundColor>
+      <BorderRadius unit="px">6</BorderRadius>
+      <Width>90%</Width>
+      <Height unit="px">44</Height>
+      <FontSize unit="px">18</FontSize>
+      <FontWeight>700</FontWeight>
+      <Content>アイコン＋テキスト</Content>
+    </CTAButton>
+    <FormInput>
+      <FieldType>LINE連携のみ（Webフォーム設置時）</FieldType>
+      <Height unit="px">40</Height>
+      <BorderRadius unit="px">4</BorderRadius>
+      <BorderColor>#C4C4C4</BorderColor>
+    </FormInput>
+    <ChecklistCard>
+      <BackgroundColor>#FFFFFF</BackgroundColor>
+      <BorderRadius unit="px">4</BorderRadius>
+      <Shadow>なし</Shadow>
+      <TitleColor>#E60012</TitleColor>
+      <BodyColor>#000000</BodyColor>
+    </ChecklistCard>
+  </UIComponents>
+
+  <!-- 7. トーン＆マナー -->
+  <ToneAndManner>
+    <Keywords>
+      <Keyword>親切</Keyword>
+      <Keyword>おトク</Keyword>
+      <Keyword>信頼</Keyword>
+      <Keyword>スピード</Keyword>
+      <Keyword>カジュアル</Keyword>
+    </Keywords>
+    <Guidelines>
+      <Rule>ポップな配色＋太字でメリハリ</Rule>
+      <Rule>専門語を避け、ひらがな・カタカナで柔らかく</Rule>
+      <Rule>読み上げても自然な文体（です／ます調）</Rule>
+    </Guidelines>
+  </ToneAndManner>
+
+  <!-- 8. 禁止事項 -->
+  <Prohibited>
+    <Item>彩度の低いパステル系カラーの追加</Item>
+    <Item>写真素材の多用</Item>
+    <Item>英語フォントのみの見出し</Item>
+    <Item>角丸・影の過度な装飾</Item>
+  </Prohibited>
+
+  <!-- 9. デリバリーチェックリスト -->
+  <DeliveryChecklist>
+    <Item>HEX値・フォント指定通りか</Item>
+    <Item>セクション順序・背景カラー切り替えが合っているか</Item>
+    <Item>主要CTAが1画面内に必ず表示されるか</Item>
+    <Item>文字量がモバイルでも読みやすい行長（全角18〜22字）か</Item>
+  </DeliveryChecklist>
+
+</LPDesignSpec>
