@@ -14,8 +14,17 @@ export default function LineCTA() {
           <h2 className="text-2xl font-bold text-white mb-4">すでに気になる物件がある方へ</h2>
           <div className="bg-white rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>
-              仲介手数料がいくら安くなるか無料診断！
+              仲介手数料が<br />いくら安くなるか無料診断！
             </h3>
+            
+            <div className="mb-4">
+              <img 
+                src="/attached_assets/賃貸ポータルサイト完全対応_1753112950085.png" 
+                alt="賃貸ポータルサイト完全対応 - URLをコピーして送る"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            
             <p className="text-base leading-relaxed text-gray-800 mb-4">
               SUUMO・HOME'S・athome・Instagram・TikTokで見つけた物件のURLをLINEで送るだけ！<strong style={{ color: 'var(--highlight-red)' }}>最短5分で診断結果をお知らせします。</strong>
             </p>
