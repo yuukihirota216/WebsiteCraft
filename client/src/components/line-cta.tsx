@@ -19,7 +19,7 @@ export default function LineCTA() {
             
             <div className="mb-4">
               <img 
-                src="/attached_assets/賃貸ポータルサイト完全対応_1753112950085.png" 
+                src="/portal-image.svg" 
                 alt="賃貸ポータルサイト完全対応 - URLをコピーして送る"
                 className="w-full h-auto rounded-lg"
               />
