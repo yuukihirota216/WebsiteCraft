@@ -17,12 +17,39 @@ export default function LineCTA() {
               仲介手数料が<br />いくら安くなるか無料診断！
             </h3>
             
-            <div className="mb-4">
-              <img 
-                src="/attached_assets/賃貸ポータルサイト完全対応_1753112950085.png" 
-                alt="賃貸ポータルサイト完全対応 - URLをコピーして送る"
-                className="w-full h-auto rounded-lg"
-              />
+            <div className="mb-4 bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center justify-center">
+                <div className="bg-white p-4 rounded-lg shadow-sm border-2 border-gray-200 max-w-sm">
+                  <div className="mb-3">
+                    <div className="bg-green-100 p-2 rounded text-center">
+                      <span className="text-green-800 font-bold text-sm">SUUMO</span>
+                    </div>
+                  </div>
+                  <div className="mb-3">
+                    <div className="text-sm text-gray-800 font-medium">毎月ビル2DK/2階/37.26m²の賃貸住宅</div>
+                    <div className="text-orange-600 font-bold">8.0万円</div>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs text-gray-500">1/21</div>
+                    <div className="bg-orange-500 text-white px-2 py-1 rounded text-xs">1分で完了!</div>
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <div className="bg-red-500 text-white px-3 py-2 rounded-lg font-bold text-sm whitespace-nowrap">
+                    URLをコピーして送る
+                  </div>
+                </div>
+              </div>
+              <div className="text-center mt-4">
+                <div className="font-bold text-lg mb-2">賃貸ポータルサイト完全対応！</div>
+                <div className="flex justify-center items-center space-x-4 text-sm">
+                  <span className="bg-green-100 px-2 py-1 rounded">SUUMO</span>
+                  <span className="bg-orange-100 px-2 py-1 rounded">LIFULL HOME'S</span>
+                  <span className="bg-red-100 px-2 py-1 rounded">at home</span>
+                  <span className="bg-purple-100 px-2 py-1 rounded">Instagram</span>
+                  <span className="bg-gray-100 px-2 py-1 rounded">TikTok</span>
+                </div>
+              </div>
             </div>
             
             <p className="text-base leading-relaxed text-gray-800 mb-4">
