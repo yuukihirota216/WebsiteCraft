@@ -10,8 +10,14 @@ export default function HeroSection() {
   return (
     <section id="hero" className="px-4 py-8 text-center" style={{ backgroundColor: 'var(--hero-bg)' }}>
       <div className="space-y-6">
-        {/* Hero character illustration placeholder */}
-        <div className="w-24 h-24 mx-auto hero-character"></div>
+        {/* Hero character illustration */}
+        <div className="w-32 h-32 mx-auto">
+          <img 
+            src="/woman-illustration.svg" 
+            alt="スマートフォンを持つ女性のイラスト" 
+            className="w-full h-full object-contain"
+          />
+        </div>
         
         <div className="space-y-6">
           <h1 className="text-3xl font-black leading-tight tracking-tight" style={{ color: 'var(--trust-blue)' }}>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" style="background-color: #F5C842;">
+  <!-- Woman illustration based on the provided image -->
+  
+  <!-- Hair -->
+  <path d="M200 50 C160 50, 130 80, 130 120 C130 140, 135 160, 145 175 L145 190 C145 200, 150 210, 160 215 L240 215 C250 210, 255 200, 255 190 L255 175 C265 160, 270 140, 270 120 C270 80, 240 50, 200 50 Z" fill="#F5C842" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Face -->
+  <ellipse cx="200" cy="170" rx="50" ry="55" fill="#FFF" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="185" cy="160" rx="8" ry="10" fill="#8B4513"/>
+  <ellipse cx="215" cy="160" rx="8" ry="10" fill="#8B4513"/>
+  
+  <!-- Eye highlights -->
+  <ellipse cx="187" cy="157" rx="2" ry="3" fill="#FFF"/>
+  <ellipse cx="217" cy="157" rx="2" ry="3" fill="#FFF"/>
+  
+  <!-- Nose -->
+  <circle cx="200" cy="175" r="1" fill="#8B4513"/>
+  
+  <!-- Mouth -->
+  <path d="M190 190 Q200 200 210 190" stroke="#F5C842" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="185" y="220" width="30" height="20" fill="#FFF"/>
+  
+  <!-- Shirt collar -->
+  <path d="M170 240 L170 260 L185 250 L200 260 L215 250 L230 260 L230 240 Z" fill="#FFF" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Shirt body -->
+  <rect x="160" y="260" width="80" height="100" fill="#FFF" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Arms -->
+  <ellipse cx="140" cy="300" rx="20" ry="40" fill="#FFF" stroke="#8B4513" stroke-width="3"/>
+  <ellipse cx="260" cy="300" rx="20" ry="40" fill="#FFF" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Hands holding phone -->
+  <ellipse cx="180" cy="330" rx="12" ry="18" fill="#F5C842"/>
+  <ellipse cx="220" cy="330" rx="12" ry="18" fill="#F5C842"/>
+  
+  <!-- Phone -->
+  <rect x="185" y="315" width="30" height="50" rx="8" fill="#F5C842" stroke="#8B4513" stroke-width="2"/>
+  <rect x="190" y="320" width="20" height="25" fill="#FFF"/>
+  <circle cx="200" cy="355" r="3" fill="#8B4513"/>
+  
+  <!-- Phone screen lines -->
+  <line x1="192" y1="325" x2="208" y2="325" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="192" y1="330" x2="208" y2="330" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="192" y1="335" x2="208" y2="335" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Hair strands details -->
+  <path d="M145 175 C150 180, 155 185, 160 190" stroke="#8B4513" stroke-width="2" fill="none"/>
+  <path d="M255 175 C250 180, 245 185, 240 190" stroke="#8B4513" stroke-width="2" fill="none"/>
+  <path d="M200 50 C205 60, 210 70, 215 80" stroke="#8B4513" stroke-width="2" fill="none"/>
+  
+  <!-- Shirt pocket lines -->
+  <line x1="170" y1="280" x2="190" y2="280" stroke="#8B4513" stroke-width="1"/>
+  <line x1="170" y1="280" x2="170" y2="300" stroke="#8B4513" stroke-width="1"/>
+  <line x1="190" y1="280" x2="190" y2="300" stroke="#8B4513" stroke-width="1"/>
+  <line x1="170" y1="300" x2="190" y2="300" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Additional hair volume -->
+  <path d="M130 120 C125 130, 125 140, 130 150" stroke="#8B4513" stroke-width="2" fill="none"/>
+  <path d="M270 120 C275 130, 275 140, 270 150" stroke="#8B4513" stroke-width="2" fill="none"/>
+</svg>
