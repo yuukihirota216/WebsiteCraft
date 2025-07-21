@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f5f5f5"/>
+  
+  <!-- Phone mockup -->
+  <rect x="50" y="50" width="200" height="300" rx="20" fill="#000" stroke="#333" stroke-width="3"/>
+  <rect x="55" y="70" width="190" height="260" fill="#fff"/>
+  
+  <!-- SUUMO header -->
+  <rect x="60" y="75" width="180" height="30" fill="#4CAF50"/>
+  <text x="150" y="95" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">SUUMO</text>
+  
+  <!-- Property info -->
+  <text x="70" y="125" font-family="Arial" font-size="10" fill="#333">毎月ビル2DK/2階/37.26m²</text>
+  <text x="70" y="140" font-family="Arial" font-size="12" font-weight="bold" fill="#FF5722">8.0万円</text>
+  
+  <!-- Property image placeholder -->
+  <rect x="70" y="150" width="160" height="100" fill="#E0E0E0"/>
+  <text x="150" y="205" text-anchor="middle" font-family="Arial" font-size="10" fill="#666">物件写真</text>
+  
+  <!-- Bottom button -->
+  <rect x="70" y="260" width="160" height="25" fill="#FF5722" rx="5"/>
+  <text x="150" y="275" text-anchor="middle" fill="white" font-family="Arial" font-size="10">1分で完了!</text>
+  
+  <!-- Arrow -->
+  <path d="M270 200 L330 200 M320 190 L330 200 L320 210" stroke="#E53E3E" stroke-width="4" fill="none"/>
+  
+  <!-- URL copy message -->
+  <rect x="350" y="180" width="120" height="40" fill="#E53E3E" rx="8"/>
+  <text x="410" y="205" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">URLを</text>
+  <text x="410" y="215" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">コピーして送る</text>
+  
+  <!-- Title -->
+  <text x="300" y="280" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">賃貸ポータルサイト完全対応！</text>
+  
+  <!-- Platform logos -->
+  <rect x="150" y="310" width="60" height="20" fill="#4CAF50" rx="3"/>
+  <text x="180" y="323" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">SUUMO</text>
+  
+  <rect x="220" y="310" width="80" height="20" fill="#FF9800" rx="3"/>
+  <text x="260" y="323" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">HOME'S</text>
+  
+  <rect x="310" y="310" width="60" height="20" fill="#F44336" rx="3"/>
+  <text x="340" y="323" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">at home</text>
+  
+  <rect x="380" y="310" width="60" height="20" fill="#9C27B0" rx="3"/>
+  <text x="410" y="323" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">Instagram</text>
+  
+  <rect x="450" y="310" width="50" height="20" fill="#424242" rx="3"/>
+  <text x="475" y="323" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">TikTok</text>
+</svg>
