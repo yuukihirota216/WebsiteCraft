@@ -13,7 +13,7 @@ export default function HeroSection() {
         {/* Hero character illustration */}
         <div className="w-32 h-32 mx-auto">
           <img 
-            src="/woman-illustration.svg" 
+            src="/attached_assets/女性イラスト１_1753113558828.png" 
             alt="スマートフォンを持つ女性のイラスト" 
             className="w-full h-full object-contain"
           />
