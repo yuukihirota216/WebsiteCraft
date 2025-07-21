@@ -6,6 +6,16 @@ export default function ProblemSolution() {
           <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>
             知ってましたか？不動産業界の真実
           </h2>
+          
+          {/* Real Estate Industry Truth Diagram */}
+          <div className="mb-6">
+            <img 
+              src="/real-estate-truth.png" 
+              alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
+              className="w-full h-auto max-w-2xl mx-auto rounded-lg"
+            />
+          </div>
+          
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--highlight-red)' }}>
               どの不動産会社も扱っている物件は同じです
@@ -18,15 +28,6 @@ export default function ProblemSolution() {
               <strong style={{ color: 'var(--highlight-red)' }}>「どれだけお客様の立場に立てるか」<br />「どれだけ初期費用を抑えられるか」</strong>
             </p>
           </div>
-        </div>
-
-        {/* Real Estate Industry Truth Diagram */}
-        <div className="text-center">
-          <img 
-            src="/real-estate-truth.png" 
-            alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
-            className="w-full h-auto max-w-2xl mx-auto rounded-lg"
-          />
         </div>
 
         {/* Customer Problems */}
