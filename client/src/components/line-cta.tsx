@@ -68,10 +68,13 @@ export default function LineCTA() {
               SNSで見つけた物件もOK！
             </h3>
             <p className="text-base leading-relaxed text-gray-800 mb-4">
-              最近増えているInstagram・TikTokの物件投稿。「この物件気になるけど、どこに問い合わせれば...」そんな物件も、スタイル不動産なら仲介可能です！
+              最近増えているInstagram・TikTokの物件投稿。<br />
+              「この物件気になるけど、どこに問い合わせれば...」<br />
+              そんな物件も、スタイル不動産なら仲介可能です！
             </p>
             <p className="text-sm text-gray-700 mb-4">
-              投稿のスクリーンショットやURLを送っていただければ、物件を特定して、仲介手数料を抑えてご案内いたします。
+              投稿のスクリーンショットやURLを送っていただければ、<br />
+              物件を特定して、仲介手数料を抑えてご案内いたします。
             </p>
           </div>
         </div>
