@@ -38,11 +38,11 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  // Serve attached assets as static files
+  const server = await registerRoutes(app);
+  
+  // Serve attached assets as static files BEFORE Vite setup
   const attachedAssetsPath = path.resolve(import.meta.dirname, "..", "attached_assets");
   app.use("/attached_assets", express.static(attachedAssetsPath));
-  
-  const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
