@@ -8,11 +8,11 @@ export default function ProblemSolution() {
           </h2>
           
           {/* Real Estate Industry Truth Diagram */}
-          <div className="mb-6">
+          <div>
             <img 
               src="/real-estate-truth.png" 
               alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
-              className="w-full h-auto max-w-2xl mx-auto rounded-lg"
+              className="w-full h-auto max-w-2xl mx-auto"
             />
           </div>
           
