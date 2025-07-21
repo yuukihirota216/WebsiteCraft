@@ -1,5 +1,4 @@
 import HeroSection from "@/components/hero-section";
-import MeritBadges from "@/components/merit-badges";
 import ProblemSolution from "@/components/problem-solution";
 import LineCTA from "@/components/line-cta";
 import TrustInfo from "@/components/trust-info";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <div className="side-borders max-w-md mx-auto min-h-screen bg-white">
       <HeroSection />
-      <MeritBadges />
       <ProblemSolution />
       <LineCTA />
       <TrustInfo />
