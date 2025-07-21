@@ -13,7 +13,7 @@ export default function HeroSection() {
         {/* Hero character illustration placeholder */}
         <div className="w-24 h-24 mx-auto hero-character"></div>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           <h1 className="text-3xl font-black leading-tight tracking-tight" style={{ color: 'var(--trust-blue)' }}>
             名古屋の賃貸探しで、<br />
             <span style={{ color: 'var(--highlight-red)' }}>もう損しない。</span>
