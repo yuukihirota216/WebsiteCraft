@@ -137,9 +137,9 @@ export default function ProblemSolution() {
                   </tr>
                   <tr className="bg-yellow-50 font-bold">
                     <td className="px-4 py-4">合計</td>
-                    <td className="px-4 py-4 text-center text-lg">18万円</td>
+                    <td className="px-4 py-4 text-center text-lg whitespace-nowrap">18万円</td>
                     <td className="px-4 py-4 text-center text-lg" style={{ color: 'var(--highlight-red)' }}>0円〜</td>
-                    <td className="px-4 py-4 text-center text-xl whitespace-nowrap" style={{ color: 'var(--highlight-red)' }}>最大18万円お得！</td>
+                    <td className="px-4 py-4 text-center text-xl" style={{ color: 'var(--highlight-red)' }}>最大18万円お得！</td>
                   </tr>
                 </tbody>
               </table>
