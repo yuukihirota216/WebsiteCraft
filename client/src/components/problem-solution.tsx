@@ -20,6 +20,15 @@ export default function ProblemSolution() {
           </div>
         </div>
 
+        {/* Real Estate Industry Truth Diagram */}
+        <div className="text-center">
+          <img 
+            src="/real-estate-truth.png" 
+            alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
+            className="w-full h-auto max-w-2xl mx-auto rounded-lg"
+          />
+        </div>
+
         {/* Customer Problems */}
         <div>
           <h3 className="text-xl font-bold text-center mb-6" style={{ color: 'var(--trust-blue)' }}>
