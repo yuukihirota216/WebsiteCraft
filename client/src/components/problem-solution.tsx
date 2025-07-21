@@ -23,7 +23,7 @@ export default function ProblemSolution() {
         {/* Customer Problems */}
         <div>
           <h3 className="text-xl font-bold text-center mb-6" style={{ color: 'var(--trust-blue)' }}>
-            あなたのお部屋探し、こんな悩みありませんか？
+            あなたのお部屋探し、<br />こんな悩みありませんか？
           </h3>
           <div className="space-y-4">
             {[
