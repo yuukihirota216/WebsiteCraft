@@ -49,6 +49,16 @@ export default function LineCTA() {
             <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>
               不動産会社のみが見れるサイトを一緒に見ながら理想の物件を紹介します！
             </h3>
+            
+            {/* Property Search Consultation Image */}
+            <div className="mb-4">
+              <img 
+                src="/property-search-consultation.png" 
+                alt="物件相談の様子 - 不動産スタッフがお客様と一緒にパソコンで物件を探している写真"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            
             <p className="text-base leading-relaxed text-gray-800 mb-4">
               業者専用の物件データベースを使って、名古屋市内の最新物件情報をリアルタイムでチェック。おとり物件の心配なく、効率的にお部屋探しができます。
             </p>
