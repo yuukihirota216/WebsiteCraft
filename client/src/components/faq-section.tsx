@@ -57,13 +57,13 @@ export default function FAQSection() {
                   <ChevronDown size={20} className="flex-shrink-0" />
                 )}
               </button>
-              <div 
-                className={`accordion-content px-4 pb-4 ${activeIndex === index ? 'active' : ''}`}
-              >
-                <div className="text-sm leading-relaxed text-gray-700">
-                  {faq.answer}
+              {activeIndex === index && (
+                <div className="px-4 pb-4">
+                  <div className="text-sm leading-relaxed text-gray-700">
+                    {faq.answer}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
