@@ -10,7 +10,7 @@ export default function ProblemSolution() {
           {/* Real Estate Industry Truth Diagram */}
           <div className="mb-6">
             <img 
-              src="/real-estate-truth.png" 
+              src="/real-estate-truth-new.png" 
               alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
               className="w-full h-auto max-w-2xl mx-auto rounded-lg"
             />
