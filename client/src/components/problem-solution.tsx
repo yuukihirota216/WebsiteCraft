@@ -3,12 +3,12 @@ export default function ProblemSolution() {
     <section className="px-4 py-8" style={{ backgroundColor: 'var(--content-cream)' }}>
       <div className="space-y-8">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>
+          <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--trust-blue)' }}>
             知ってましたか？不動産業界の真実
           </h2>
           
           {/* Real Estate Industry Truth Diagram */}
-          <div>
+          <div className="-mt-2">
             <img 
               src="/real-estate-truth.png" 
               alt="これが賃貸業界の真実 - 不動産会社の報酬構造の説明図"
