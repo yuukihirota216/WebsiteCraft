@@ -28,6 +28,15 @@ export default function ProblemSolution() {
               <strong style={{ color: 'var(--highlight-red)' }}>「どれだけお客様の立場に立てるか」<br />「どれだけ初期費用を抑えられるか」</strong>
             </p>
           </div>
+          
+          {/* Commission Comparison Image */}
+          <div className="mt-6">
+            <img 
+              src="/attached_assets/グループ 394_1753115700325.png" 
+              alt="なのでスタイル不動産は自社に入る報酬をすべて公開しています - 仲介手数料の比較図"
+              className="w-full h-auto max-w-2xl mx-auto rounded-lg"
+            />
+          </div>
         </div>
 
 
