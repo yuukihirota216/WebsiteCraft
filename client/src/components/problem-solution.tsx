@@ -32,7 +32,7 @@ export default function ProblemSolution() {
           {/* Commission Comparison Image */}
           <div className="mt-6">
             <img 
-              src="/commission-comparison.png" 
+              src="/attached_assets/グループ 394_1753879694175.png" 
               alt="なのでサクッと賃貸は自社に入る報酬をすべて公開しています - 仲介手数料の比較図"
               className="w-full h-auto max-w-2xl mx-auto rounded-lg"
             />
