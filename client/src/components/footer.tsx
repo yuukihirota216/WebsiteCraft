@@ -13,8 +13,8 @@ export default function Footer() {
         </div>
         
         <div className="text-sm">
-          <strong>名古屋の賃貸探しは、スタイル不動産にお任せください</strong><br />
-          株式会社スタイル不動産<br />
+          <strong>名古屋の賃貸探しは、サクッと賃貸にお任せください</strong><br />
+          株式会社サクッと賃貸<br />
           愛知県知事免許(1)第●●●●●号<br />
           名古屋市●●区●●●
         </div>

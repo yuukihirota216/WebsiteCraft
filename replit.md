@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for a Japanese real estate company called "Style Real Estate" (スタイル不動産) that specializes in rental property services in Nagoya with a focus on zero commission fees. The application is built as a landing page to attract customers through LINE messaging integration for property consultations.
+This is a full-stack web application for a Japanese real estate company called "Sakutto Chintai" (サクッと賃貸) that specializes in rental property services in Nagoya with a focus on zero commission fees. The application is built as a landing page to attract customers through LINE messaging integration for property consultations.
 
 ## User Preferences
 

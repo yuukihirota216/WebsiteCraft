@@ -30,7 +30,7 @@ export default function HeroSection() {
               仲介手数料<span className="numeric-large">最大0円</span>
             </div>
             <div className="text-base font-bold" style={{ color: 'var(--trust-blue)' }}>
-              スタイル不動産
+              サクッと賃貸
             </div>
           </div>
           

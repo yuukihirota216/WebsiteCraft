@@ -2,7 +2,7 @@ export default function MeritBadges() {
   return (
     <section id="merit-badges" className="px-4 py-8" style={{ backgroundColor: 'var(--line-green)' }}>
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">スタイル不動産が選ばれる3つの理由</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">サクッと賃貸が選ばれる3つの理由</h2>
       </div>
       
       <div className="space-y-6">

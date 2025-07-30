@@ -33,7 +33,7 @@ export default function ProblemSolution() {
           <div className="mt-6">
             <img 
               src="/commission-comparison.png" 
-              alt="なのでスタイル不動産は自社に入る報酬をすべて公開しています - 仲介手数料の比較図"
+              alt="なのでサクッと賃貸は自社に入る報酬をすべて公開しています - 仲介手数料の比較図"
               className="w-full h-auto max-w-2xl mx-auto rounded-lg"
             />
           </div>
@@ -44,7 +44,7 @@ export default function ProblemSolution() {
         {/* Three Reasons Section - Moved from merit-badges */}
         <div>
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>スタイル不動産が選ばれる3つの理由</h2>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--trust-blue)' }}>サクッと賃貸が選ばれる3つの理由</h2>
           </div>
           
           <div className="space-y-6">
@@ -121,7 +121,7 @@ export default function ProblemSolution() {
                   <tr>
                     <th className="px-4 py-3 text-left font-bold">項目</th>
                     <th className="px-4 py-3 text-center font-bold">他社</th>
-                    <th className="px-4 py-3 text-center font-bold" style={{ color: 'var(--line-green)' }}>スタイル不動産</th>
+                    <th className="px-4 py-3 text-center font-bold" style={{ color: 'var(--line-green)' }}>サクッと賃貸</th>
                     <th className="px-4 py-3 text-center font-bold" style={{ color: 'var(--highlight-red)' }}>お得額</th>
                   </tr>
                 </thead>
