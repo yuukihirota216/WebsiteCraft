@@ -19,12 +19,20 @@ Preferred communication style: Simple, everyday language.
 - **Fonts**: Google Fonts (Noto Sans JP) for proper Japanese typography
 - **Responsive**: Mobile-first design approach with media queries
 
+### File Structure (Simplified)
+- **index.html**: Main landing page
+- **styles.css**: Complete styling and responsive design
+- **script.js**: Interactive functionality
+- **server.js**: Express.js development server
+- **images/**: Image assets directory
+
 ## Key Components
 
 ### Static Site Structure
 - **index.html**: Main landing page with semantic HTML structure
 - **styles.css**: Complete responsive styling with CSS custom properties
 - **script.js**: Interactive functionality including FAQ toggles and tracking
+- **server.js**: Express.js development server for local hosting
 - **images/**: Image assets (woman illustration, comparison charts, truth diagram)
 - **README.md**: Comprehensive setup and customization documentation
 - **upload-guide.txt**: Quick reference for server deployment
