@@ -1,0 +1,31 @@
+🚀 エックスサーバーアップロードガイド
+
+【1】必要なファイル一覧
+- index.html （メインページ）
+- styles.css （デザイン）
+- script.js （動作制御）
+- images/ フォルダ（画像3点）
+
+【2】アップロード手順
+1. エックスサーバーのファイルマネージャにログイン
+2. public_html フォルダを開く
+3. 以下をアップロード：
+   - index.html
+   - styles.css  
+   - script.js
+   - images フォルダ（中身も全て）
+
+【3】LINE設定（重要！）
+script.js ファイルの38行目を編集：
+現在: alert('LINEでのお問い合わせ機能を...')
+変更後: window.open('https://line.me/R/ti/p/@あなたのLINE-ID', '_blank');
+
+【4】確認方法
+ブラウザでドメインにアクセスして動作確認
+
+【5】よくある問題
+- 画像が表示されない → images フォルダのアップロード確認
+- LINEボタンが動かない → script.js のLINE URL設定確認
+- レイアウトが崩れる → styles.css のアップロード確認
+
+完了後は全ての機能をテストしてください！
