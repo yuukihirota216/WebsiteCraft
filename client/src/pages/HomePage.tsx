@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { MessageCircle, Plus, Minus } from 'lucide-react';
-import womanIllustrationPath from '@assets/woman-illustration.png';
-import realEstateTruthPath from '@assets/real-estate-truth.png';
-import sakuttoComparisonPath from '@assets/sakutto-comparison.png';
+// Image paths for the real estate site
+const womanIllustrationPath = '/images/woman-illustration.png';
+const realEstateTruthPath = '/images/real-estate-truth.png';
+const sakuttoComparisonPath = '/images/sakutto-comparison.png';
 
 interface FaqItem {
   question: string;

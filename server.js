@@ -1,83 +1,45 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
 const path = require('path');
-const url = require('url');
 
-// Set the port from environment variable or default to 5000
-const PORT = process.env.PORT || 5000;
+const app = express();
+const port = process.env.PORT || 5000;
 
-// MIME types for different file extensions
-const mimeTypes = {
-  '.html': 'text/html',
-  '.css': 'text/css',
-  '.js': 'text/javascript',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.gif': 'image/gif',
-  '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon',
-  '.json': 'application/json',
-  '.txt': 'text/plain'
-};
+// CORS and JSON middleware
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+app.use(express.json());
 
-// Create the server
-const server = http.createServer((req, res) => {
-  // Parse the URL
-  const parsedUrl = url.parse(req.url);
-  let pathname = parsedUrl.pathname;
-  
-  // Default to index.html for root requests
-  if (pathname === '/') {
-    pathname = '/index.html';
-  }
-  
-  // Build the file path
-  const filePath = path.join(__dirname, pathname);
-  
-  // Check if file exists
-  fs.access(filePath, fs.constants.F_OK, (err) => {
-    if (err) {
-      // File not found - serve index.html for SPA routing
-      const indexPath = path.join(__dirname, 'index.html');
-      fs.readFile(indexPath, (err, data) => {
-        if (err) {
-          res.writeHead(500, { 'Content-Type': 'text/plain' });
-          res.end('Internal Server Error');
-          return;
-        }
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(data);
-      });
-    } else {
-      // File exists - serve it
-      const ext = path.extname(filePath);
-      const contentType = mimeTypes[ext] || 'application/octet-stream';
-      
-      fs.readFile(filePath, (err, data) => {
-        if (err) {
-          res.writeHead(500, { 'Content-Type': 'text/plain' });
-          res.end('Internal Server Error');
-          return;
-        }
-        
-        // Set cache control headers for static assets
-        if (ext !== '.html') {
-          res.setHeader('Cache-Control', 'public, max-age=31536000'); // 1 year
-        } else {
-          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
-          res.setHeader('Pragma', 'no-cache');
-          res.setHeader('Expires', '0');
-        }
-        
-        res.writeHead(200, { 'Content-Type': contentType });
-        res.end(data);
-      });
-    }
-  });
+// API routes
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', message: 'Server is running' });
 });
 
-// Start the server
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`サクッと賃貸 静的サイト起動中 - http://0.0.0.0:${PORT}`);
+// Static file serving for development
+app.use(express.static('client/dist'));
+app.use('/images', express.static('images'));
+
+// For React development, serve the client HTML
+app.get('/', (req, res) => {
+  // Check if client/index.html exists for React dev
+  const clientIndexPath = path.join(__dirname, 'client', 'index.html');
+  const fs = require('fs');
+  
+  if (fs.existsSync(clientIndexPath)) {
+    res.sendFile(clientIndexPath);
+  } else {
+    // Fallback to root index.html (static site)
+    const rootIndexPath = path.join(__dirname, 'index.html');
+    if (fs.existsSync(rootIndexPath)) {
+      res.sendFile(rootIndexPath);
+    } else {
+      res.status(404).send('Page not found');
+    }
+  }
+});
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`サクッと賃貸 開発サーバー起動中 - http://0.0.0.0:${port}`);
 });
