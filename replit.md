@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for a Japanese real estate company called "Sakutto Chintai" (サクッと賃貸) that specializes in rental property services in Nagoya with a focus on zero commission fees. The application is built as a landing page to attract customers through LINE messaging integration for property consultations.
+This is a static landing page for a Japanese real estate company called "Sakutto Chintai" (サクッと賃貸) that specializes in rental property services in Nagoya with a focus on zero commission fees. The site is built with pure HTML, CSS, and JavaScript for easy deployment on standard web hosting services like X-Server.
 
 ## User Preferences
 
@@ -10,97 +10,85 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite for fast development and optimized production builds
-- **Routing**: Wouter for lightweight client-side routing
-- **UI Framework**: Radix UI primitives with shadcn/ui component library
-- **Styling**: Tailwind CSS with custom CSS variables for theming
-- **State Management**: TanStack Query (React Query) for server state management
-- **Forms**: React Hook Form with Zod validation resolvers
-
-### Backend Architecture
-- **Runtime**: Node.js with Express.js server
-- **Language**: TypeScript with ES modules
-- **API Structure**: RESTful API with `/api` prefix
-- **Development Server**: Custom Vite integration for SSR-like development experience
-- **Storage Interface**: Abstracted storage layer with in-memory implementation
-
-### Data Storage Solutions
-- **Database ORM**: Drizzle ORM with PostgreSQL dialect
-- **Database Provider**: Neon Database (serverless PostgreSQL)
-- **Schema Management**: Drizzle Kit for migrations and schema management
-- **Development Storage**: In-memory storage implementation for rapid prototyping
-- **Session Management**: PostgreSQL-based sessions with connect-pg-simple
+### Static Site Architecture
+- **Frontend**: Pure HTML5, CSS3, and vanilla JavaScript
+- **Styling**: Custom CSS with CSS variables for theming and responsive design
+- **Interactivity**: Vanilla JavaScript for FAQ toggles, smooth scrolling, and form handling
+- **Images**: Optimized PNG files stored in `images/` directory
+- **Fonts**: Google Fonts (Noto Sans JP) for proper Japanese typography
+- **Responsive**: Mobile-first design approach with media queries
 
 ## Key Components
 
-### Frontend Components
-- **Landing Page Sections**: Modular React components for hero, features, FAQ, and CTA sections
-- **UI Components**: Complete shadcn/ui component library including forms, dialogs, toasts
-- **Responsive Design**: Mobile-first approach with Tailwind CSS utilities
-- **Japanese Typography**: Noto Sans JP font integration for proper Japanese text rendering
+### Static Site Structure
+- **index.html**: Main landing page with semantic HTML structure
+- **styles.css**: Complete responsive styling with CSS custom properties
+- **script.js**: Interactive functionality including FAQ toggles and tracking
+- **images/**: Image assets (woman illustration, comparison charts, truth diagram)
+- **README.md**: Comprehensive setup and customization documentation
+- **upload-guide.txt**: Quick reference for server deployment
 
-### Backend Components
-- **Express Server**: Custom server with middleware for logging and error handling
-- **Storage Abstraction**: Interface-based storage layer for easy database switching
-- **Route Registration**: Centralized route management system
-- **Development Tools**: Hot reloading with Vite integration
+### Page Sections
+- **Hero Section**: Company branding, main value proposition, and primary CTA
+- **Merit Badges**: Three key selling points with numbered design
+- **Problem Solution**: Industry truth explanation with comparison charts
+- **FAQ Section**: Expandable questions and answers
+- **Final CTA**: Secondary conversion opportunity
+- **Footer**: Business hours and company information
 
-### Shared Components
-- **Schema Definitions**: Shared TypeScript types and Zod validation schemas
-- **Database Models**: User model with username/password authentication structure
+## User Interaction Flow
 
-## Data Flow
-
-1. **Client Requests**: Frontend makes API calls through TanStack Query
-2. **Server Processing**: Express routes handle API requests using storage interface
-3. **Data Persistence**: Storage layer abstracts database operations
-4. **Response Handling**: Standardized JSON responses with error handling
-5. **UI Updates**: React Query manages cache invalidation and UI updates
+1. **Page Load**: Static HTML loads with CSS and JavaScript
+2. **Interactive Elements**: FAQ toggles, smooth scrolling, and button animations
+3. **LINE Integration**: CTA buttons link to LINE official account (requires setup)
+4. **Responsive Design**: Automatic adaptation to different screen sizes
+5. **SEO Optimization**: Meta tags and structured content for search engines
 
 ## External Dependencies
 
-### Core Framework Dependencies
-- React ecosystem (React 18, React DOM, React Hook Form)
-- Express.js with TypeScript support
-- Drizzle ORM for database operations
-- TanStack Query for data fetching
+### Minimal Dependencies
+- **Google Fonts**: Noto Sans JP for Japanese typography
+- **No JavaScript Frameworks**: Pure vanilla JavaScript for maximum compatibility
+- **No Build Process**: Direct HTML/CSS/JS files for easy hosting
+- **LINE Platform**: Integration point for customer communication (setup required)
 
-### UI and Styling Dependencies
-- Radix UI primitives for accessible components
-- Tailwind CSS for utility-first styling
-- Lucide React for consistent iconography
-- Class variance authority for component variants
-
-### Development Dependencies
-- Vite for build tooling and development server
-- TypeScript for type safety
-- ESBuild for production builds
-- PostCSS with Autoprefixer for CSS processing
-
-### Integration Dependencies
-- LINE messaging platform (planned integration)
-- Neon Database for PostgreSQL hosting
-- Various Radix UI components for rich interactions
+### Browser Compatibility
+- Chrome 60+, Firefox 60+, Safari 12+, Edge 79+
+- iOS Safari 12+, Android Chrome 60+
+- Graceful degradation for older browsers
 
 ## Deployment Strategy
 
-### Build Process
-1. **Frontend Build**: Vite builds React application to `dist/public`
-2. **Backend Build**: ESBuild bundles server code to `dist/index.js`
-3. **Database Migrations**: Drizzle Kit handles schema migrations
-4. **Asset Optimization**: Vite optimizes assets and implements code splitting
+### Hosting Requirements
+- **Any Web Server**: Apache, Nginx, shared hosting (X-Server, etc.)
+- **No Server-Side Processing**: Pure static file serving
+- **HTTPS Recommended**: For security and SEO benefits
+- **Domain Pointing**: Standard DNS configuration to hosting provider
 
-### Environment Configuration
-- **Development**: Local development with hot reloading via Vite
-- **Production**: Optimized builds with environment-specific configurations
-- **Database**: Environment-based DATABASE_URL configuration
+### Deployment Process
+1. **File Upload**: Copy all files to web server document root
+2. **LINE Configuration**: Update script.js with actual LINE official account URL
+3. **Testing**: Verify all functionality works on live server
+4. **Analytics Setup**: Optional Google Analytics or tracking implementation
 
-### Hosting Considerations
-- **Static Assets**: Frontend served from `dist/public`
-- **API Endpoints**: Express server handles `/api` routes
-- **Database**: Neon Database provides serverless PostgreSQL
-- **Session Storage**: PostgreSQL-based session management for scalability
+### File Structure for Hosting
+```
+public_html/
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+├── upload-guide.txt
+└── images/
+    ├── woman-illustration.png
+    ├── real-estate-truth.png
+    └── sakutto-comparison.png
+```
 
-The architecture emphasizes rapid development with TypeScript safety, modern React patterns, and a clean separation between frontend and backend concerns. The storage abstraction allows for easy testing and development while maintaining production readiness with PostgreSQL integration.
+### Customization Options
+- **Colors**: Modify CSS custom properties in styles.css
+- **Content**: Edit text directly in index.html
+- **Images**: Replace files in images/ directory
+- **LINE Integration**: Configure handleLineClick() function in script.js
+
+The architecture prioritizes simplicity, performance, and ease of deployment on standard web hosting services while maintaining professional design and functionality.
