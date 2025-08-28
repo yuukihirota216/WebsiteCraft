@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a static landing page for a Japanese real estate company called "Sakutto Chintai" (サクッと賃貸) that specializes in rental property services in Nagoya with a focus on zero commission fees. The site is built with pure HTML, CSS, and JavaScript for easy deployment on standard web hosting services like X-Server.
+This is a static landing page for a Japanese real estate company called "Sakutto Chintai" (サクッと賃貸) that specializes in rental property services in Nagoya with a focus on zero commission fees. The site is built with pure HTML, CSS, and JavaScript and served via Express.js for development.
 
 ## User Preferences
 
@@ -11,7 +11,8 @@ Preferred communication style: Simple, everyday language.
 ## System Architecture
 
 ### Static Site Architecture
-- **Frontend**: Pure HTML5, CSS3, and vanilla JavaScript
+- **Frontend**: Pure HTML5, CSS3, and vanilla JavaScript  
+- **Backend**: Express.js server for development (server.js)
 - **Styling**: Custom CSS with CSS variables for theming and responsive design
 - **Interactivity**: Vanilla JavaScript for FAQ toggles, smooth scrolling, and form handling
 - **Images**: Optimized PNG files stored in `images/` directory
