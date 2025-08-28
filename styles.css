@@ -76,6 +76,10 @@ h3 {
     text-align: center;
 }
 
+.hero-section .line-btn {
+    margin: 24px auto 16px;
+}
+
 .hero-image {
     width: 128px;
     height: 128px;
@@ -162,6 +166,7 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: 0 auto;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -465,6 +470,10 @@ h3 {
     color: white;
     padding: 48px 0;
     text-align: center;
+}
+
+.cta-section .line-btn {
+    margin: 24px auto;
 }
 
 .cta-title {
