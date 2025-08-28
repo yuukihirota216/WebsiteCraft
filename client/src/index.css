@@ -95,7 +95,20 @@
 
 .line-btn {
   background-color: hsl(var(--line-green));
-  @apply text-white px-6 py-3 rounded-lg font-bold text-lg transition-all duration-200 hover:scale-105 active:scale-95;
+  @apply text-white px-6 py-3 rounded-lg font-bold text-lg transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto mb-4;
+  width: 100%;
+  max-width: 400px;
+  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Container for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .merit-number {

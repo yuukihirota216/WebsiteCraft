@@ -46,17 +46,34 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 280px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .line-btn:hover {
-  transform: scale(1.05);
+  background-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .line-btn:active {
-  transform: scale(0.95);
+  transform: translateY(0px);
+}
+
+/* Button Container for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .merit-section {
