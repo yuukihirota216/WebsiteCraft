@@ -4,6 +4,7 @@ const config: Config = {
   darkMode: ['class'],
   content: [
     './client/src/**/*.{js,ts,jsx,tsx,mdx}',
+    './client/index.html',
   ],
   theme: {
     extend: {
